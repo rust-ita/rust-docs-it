@@ -355,6 +355,11 @@ Vuoi aiutarci a tradurre altre collections (BTreeMap, BTreeSet, VecDeque, ecc.)?
 
 ## 📖 Risorse Aggiuntive
 
+### Altre Sezioni Tradotte
+
+- [String](../string/string.md) - Stringhe UTF-8 allocate su heap (spesso usate insieme alle collections)
+- [Tipi Primitivi](../primitives.md) - Tipi base di Rust inclusi array e slice
+
 ### Documentazione Ufficiale (Inglese)
 
 - [Collections Module](https://doc.rust-lang.org/std/collections/)

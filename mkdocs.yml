@@ -104,7 +104,9 @@ nav:
       - HashSet: std/collections/hashset.md
     - I/O: std/io/index.md
     - File System: std/fs/index.md
-    - Stringhe: std/string/index.md
+    - Stringhe:
+      - std/string/index.md
+      - String: std/string/string.md
     - Option e Result: std/option-result.md
   - The Rust Book:
     - book/index.md

@@ -11,9 +11,59 @@ e questo progetto aderisce al [Semantic Versioning](https://semver.org/lang/it/)
 
 ### Da Fare
 
-- Aggiungere sezione String
+- Aggiungere sezione Option e Result
 - Iniziare traduzione The Rust Book
 - Aggiungere sezione I/O e File System
+
+---
+
+## [0.4.0] - 2025-11-04
+
+### Aggiunto
+
+- **📚 Sezione String completa** (`docs/std/string/string.md`)
+  - Panoramica String vs &str (differenze chiave ownership, mutabilità, allocazione)
+  - Struttura in memoria (puntatore, lunghezza, capacità)
+  - Creazione (new, from, to_string, format!, with_capacity)
+  - Modifica (push, push_str, insert, remove, truncate, clear, concatenazione)
+  - UTF-8 e caratteri Unicode (chars, bytes, char_indices, validazione)
+  - Conversione da/verso `Vec<u8>` (from_utf8, into_bytes, from_utf8_unchecked)
+  - Gestione capacità (reserve, shrink_to_fit, reserve_exact)
+  - Metodi di trasformazione (to_uppercase, to_lowercase, replace, trim)
+  - Pattern matching e ricerca (contains, find, rfind, starts_with, ends_with)
+  - Splitting (split, lines, split con predicati)
+  - Iteratori (chars, bytes, char_indices)
+  - Parsing (parse a numeri, gestione errori)
+  - Operazioni avanzate (drain, retain, pop)
+  - Metodi unsafe (from_utf8_unchecked, from_raw_parts, as_mut_vec)
+  - Best practices e performance tips
+  - Esempi pratici (URL builder, CSV parser, HTML markup, sanitize input)
+  - ~900 righe di documentazione completa
+- **📋 String Index aggiornato** (`docs/std/string/index.md`)
+  - Rimosso placeholder, aggiunta overview completa String e &str
+  - Confronto rapido String vs &str (tabella comparativa)
+  - Caratteristiche chiave (UTF-8 garantito, nessun indice diretto)
+  - Operazioni comuni (creazione, modifica, iterazione, ricerca, splitting)
+  - Conversioni tra String, &str, numeri e `Vec<u8>`
+  - Link a risorse (documentazione dettagliata, Book, risorse ufficiali)
+
+### Modificato
+
+- **📋 mkdocs.yml**
+  - Aggiunta navigazione gerarchica per sezione Stringhe
+  - String.md ora navigabile dal menu principale
+- **📖 README.md**
+  - Aggiornata checkbox String e &str da [ ] a [x] completato
+  - Aggiornata tabella stato traduzioni (String: ✅ Completato)
+- **🔗 Cross-reference**: Collegamenti a String da Vec e Collections
+
+### Migliorato
+
+- **Coerenza terminologica**: Utilizzo GLOSSARY.md per ownership, heap, stack, UTF-8
+- **Qualità esempi**: 15+ esempi pratici funzionanti con casi d'uso reali
+- **Performance documenti**: Tabella comparativa complessità operazioni String
+- **Documentazione unsafe**: Spiegazione dettagliata rischi e quando usare metodi unsafe
+- **Best practices**: Sezione dedicata con 5 pattern comuni e antipattern da evitare
 
 ---
 
@@ -133,7 +183,7 @@ e questo progetto aderisce al [Semantic Versioning](https://semver.org/lang/it/)
 
 ### Struttura Iniziale
 
-```
+```text
 rust-docs-it/
 ├── docs/
 │   ├── std/
