@@ -25,7 +25,7 @@ Questo progetto si propone di tradurre in italiano la documentazione ufficiale d
   - [x] Tipi primitivi (18 tipi completi!)
   - [x] Collections - Vec\<T\>
   - [x] Collections - HashMap, HashSet
-  - [ ] String e &str
+  - [x] String e &str
   - [ ] Option e Result
   - [ ] Iterators
   - [ ] I/O e File System
@@ -34,7 +34,8 @@ Questo progetto si propone di tradurre in italiano la documentazione ufficiale d
   - [ ] Ownership e borrowing (4)
   - [ ] Structs, enums e pattern matching (5-6)
 
-**Note**: Per le sezioni non ancora tradotte, abbiamo creato pagine placeholder con link alla documentazione ufficiale in inglese.
+**Note**: Per le sezioni non ancora tradotte, abbiamo creato pagine placeholder
+con link alla documentazione ufficiale in inglese.
 
 ### Roadmap futura
 
@@ -112,22 +113,24 @@ Ci sono molti modi per contribuire:
 
 **Versione Rust**: 1.90+ (Ottobre 2025)
 
-| Sezione | Stato | Assegnatario |
-|---------|-------|--------------|
-| Standard Library - Primitives | ✅ Completato | @AndreaBozzo |
-| Standard Library - Vec | ✅ Completato | @AndreaBozzo |
-| Standard Library - HashMap | ✅ Completato | @AndreaBozzo |
-| Standard Library - HashSet | ✅ Completato | @AndreaBozzo |
-| Standard Library - String | 📅 Pianificato | - |
-| Standard Library - Option/Result | 📅 Pianificato | - |
-| Book - Ch 1: Getting Started | 📅 Pianificato | - |
-| Book - Ch 2: Guessing Game | 📅 Pianificato | - |
-| Book - Ch 3: Common Concepts | 📅 Pianificato | - |
-| Book - Ch 4: Ownership | 📅 Pianificato | - |
+| Sezione | Stato |
+|---------|-------|
+| Standard Library - Primitives | ✅ Completato |
+| Standard Library - Vec | ✅ Completato |
+| Standard Library - HashMap | ✅ Completato |
+| Standard Library - HashSet | ✅ Completato |
+| Standard Library - String | ✅ Completato |
+| Standard Library - Option/Result | 📅 Pianificato |
+| Book - Ch 1: Getting Started | 📅 Pianificato |
+| Book - Ch 2: Guessing Game | 📅 Pianificato |
+| Book - Ch 3: Common Concepts | 📅 Pianificato |
+| Book - Ch 4: Ownership | 📅 Pianificato |
 
 Legenda: ✅ Completato | 📝 In corso | 👀 In revisione | 📅 Pianificato
 
-📊 **Vedi anche**: [Stato Aggiornamenti e Deprecazioni](https://rust-ita.github.io/rust-docs-it/DEPRECATIONS/) per info su versioni e cambiamenti futuri
+📊 **Vedi anche**:
+[Stato Aggiornamenti e Deprecazioni](https://rust-ita.github.io/rust-docs-it/DEPRECATIONS/)
+per info su versioni e cambiamenti futuri
 
 ## 🛠️ Tecnologie utilizzate
 
@@ -235,4 +238,6 @@ Sì, la licenza MIT/Apache-2.0 permette uso commerciale. Vedi i file di licenza 
 
 ---
 
-**[🌐 Sito](https://rust-ita.github.io/rust-docs-it/)** • **[📦 GitHub](https://github.com/rust-ita/rust-docs-it)** • **[🤝 Contribuisci](docs/CONTRIBUTING.md)**
+**[🌐 Sito](https://rust-ita.github.io/rust-docs-it/)** •
+**[📦 GitHub](https://github.com/rust-ita/rust-docs-it)** •
+**[🤝 Contribuisci](docs/CONTRIBUTING.md)**
