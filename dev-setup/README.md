@@ -31,8 +31,7 @@ dev-setup\setup-dev.bat
 2. Crea un ambiente virtuale Python (`venv/`)
 3. Installa le dipendenze da `requirements.txt`
 4. Installa pre-commit hooks
-5. Copia i file di configurazione nella root (se non esistono)
-6. Installa markdownlint-cli (se npm è disponibile)
+5. Verifica disponibilità markdownlint (richiede Node.js >= 20)
 
 ## Configurazioni
 
@@ -110,11 +109,11 @@ source venv/bin/activate
 venv\Scripts\activate.bat
 ```
 
-### Markdownlint non installato
+### Markdownlint non disponibile
 
-Se npm non è disponibile, markdownlint-cli non verrà installato. Gli hook funzioneranno comunque, ma il linting markdown sarà saltato.
+Se npm non è disponibile, markdownlint non funzionerà. Gli hook funzioneranno comunque, ma il linting markdown sarà saltato.
 
-Soluzione: Installa [Node.js](https://nodejs.org/) e riesegui lo script.
+Soluzione: Installa [Node.js](https://nodejs.org/) >= 20 e usa `npx markdownlint-cli '**/*.md'`
 
 ### Errori di permessi (Linux/macOS)
 

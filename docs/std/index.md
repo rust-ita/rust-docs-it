@@ -21,19 +21,18 @@ La **Standard Library** di Rust è la libreria fornita con ogni installazione di
 
 - **[Collections](collections/vec.md)**
   - **[Vec\<T\>](collections/vec.md)** - Array dinamico ridimensionabile
+  - **[HashMap\<K,V\>](collections/hashmap.md)** - Mappe chiave-valore
+  - **[HashSet\<T\>](collections/hashset.md)** - Insiemi di valori unici
 
-### 📝 In Traduzione
+- **[Stringhe](string/string.md)**
+  - **[String](string/string.md)** - Stringhe UTF-8 heap-allocated
 
-Le seguenti sezioni sono nella roadmap e verranno tradotte prossimamente:
-
-- **HashMap** e **HashSet** - Strutture dati basate su hash
-- **String** - Stringhe heap-allocated
-- **Option\<T\>** e **Result\<T, E\>** - Gestione valori opzionali ed errori
-- **I/O** - Input/output e gestione file
+- **[Iterators](iterators/index.md)** - Pattern e trait degli iteratori
 
 ### 📅 Pianificate
 
-- Iterators - Pattern e trait degli iteratori
+- **Option\<T\>** e **Result\<T, E\>** - Gestione valori opzionali ed errori
+- **I/O** - Input/output e gestione file
 - Smart Pointers - Box, Rc, Arc, Cell, RefCell
 - Concurrency - Thread, canali, sincronizzazione
 - Async - Programmazione asincrona

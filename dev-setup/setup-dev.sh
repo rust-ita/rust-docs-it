@@ -39,13 +39,13 @@ echo "🪝 Installing pre-commit hooks..."
 pip install pre-commit
 pre-commit install
 
-# Install markdownlint (requires npm/node)
+# Check markdownlint availability (requires npm/node)
 if command -v npm &> /dev/null; then
-    echo "📝 Installing markdownlint-cli..."
-    npm install -g markdownlint-cli
+    echo "📝 markdownlint disponibile via npx"
+    echo "   Usa: npx markdownlint-cli '**/*.md'"
 else
-    echo "⚠️  npm not found. Skipping markdownlint-cli installation."
-    echo "   Install Node.js to enable markdown linting."
+    echo "⚠️  npm non trovato. Markdownlint non disponibile."
+    echo "   Installa Node.js >= 20 per abilitare markdown linting."
 fi
 
 echo ""
