@@ -142,7 +142,7 @@ for num in numbers.iter() {
 }
 
 // numbers è ancora utilizzabile
-println!("Somma: {}", numbers.iter().sum::<i32>());
+println!("Somma: {}", numbers.iter().copied().sum::<i32>());
 ```
 
 **Quando usare `iter()`**:
@@ -1063,7 +1063,7 @@ assert_eq!(cycled, vec!["red", "green", "blue", "red", "green", "blue", "red"]);
     // let sum: i32 = numbers.iter().cycle().sum();
 
     // ✅ CORRETTO: limitato con take
-    let sum: i32 = numbers.iter().cycle().take(9).sum();
+    let sum: i32 = numbers.iter().cycle().take(9).copied().sum();
     assert_eq!(sum, 18); // (1+2+3) * 3
     ```
 
@@ -1217,16 +1217,16 @@ let sentence = words.iter().fold(String::new(), |acc, w| acc + w + " ");
 
 ```rust
 let nums = vec![1, 2, 3, 4];
-let sum = nums.iter().reduce(|acc, x| acc + x);
-assert_eq!(sum, Some(&10));
+let sum = nums.iter().copied().reduce(|acc, x| acc + x);
+assert_eq!(sum, Some(10));
 ```
 
 ### `sum()` / `product()` - Aggregazione Numerica
 
 ```rust
 let nums = vec![1, 2, 3, 4];
-let sum: i32 = nums.iter().sum();
-let product: i32 = nums.iter().product();
+let sum: i32 = nums.iter().copied().sum();
+let product: i32 = nums.iter().copied().product();
 
 assert_eq!(sum, 10);
 assert_eq!(product, 24);
@@ -1310,7 +1310,9 @@ let fives: Vec<i32> = iter::repeat(5).take(3).collect();
 assert_eq!(fives, vec![5, 5, 5]);
 
 // repeat_with (con closure)
-let randoms: Vec<i32> = iter::repeat_with(|| rand::random()).take(5).collect();
+let mut counter = 0;
+let counters: Vec<i32> = iter::repeat_with(|| { counter += 1; counter }).take(5).collect();
+assert_eq!(counters, vec![1, 2, 3, 4, 5]);
 ```
 
 !!! danger "WARNING: Loop Infiniti"
