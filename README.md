@@ -26,8 +26,8 @@ Questo progetto si propone di tradurre in italiano la documentazione ufficiale d
   - [x] Collections - Vec\<T\>
   - [x] Collections - HashMap, HashSet
   - [x] String e &str
+  - [x] Iterators
   - [ ] Option e Result
-  - [ ] Iterators
   - [ ] I/O e File System
 - [ ] **The Rust Programming Language Book**
   - [ ] Capitoli introduttivi (1-5)

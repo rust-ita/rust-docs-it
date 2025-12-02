@@ -23,13 +23,7 @@
     "punctuation": ".,;:!"
   },
   "MD033": {
-    "allowed_elements": [
-      "br",
-      "details",
-      "summary",
-      "sup",
-      "sub"
-    ]
+    "allowed_elements": ["br", "details", "summary", "sup", "sub"]
   },
   "MD034": false,
   "MD036": false,

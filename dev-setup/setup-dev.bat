@@ -38,14 +38,14 @@ echo 🪝 Installing pre-commit hooks...
 pip install pre-commit
 pre-commit install
 
-REM Install markdownlint (requires npm/node)
+REM Check markdownlint availability (requires npm/node)
 where npm >nul 2>&1
 if %errorlevel% == 0 (
-    echo 📝 Installing markdownlint-cli...
-    npm install -g markdownlint-cli
+    echo 📝 markdownlint disponibile via npx
+    echo    Usa: npx markdownlint-cli "**/*.md"
 ) else (
-    echo ⚠️  npm not found. Skipping markdownlint-cli installation.
-    echo    Install Node.js to enable markdown linting.
+    echo ⚠️  npm non trovato. Markdownlint non disponibile.
+    echo    Installa Node.js >= 20 per abilitare markdown linting.
 )
 
 echo.

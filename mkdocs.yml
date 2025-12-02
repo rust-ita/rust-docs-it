@@ -107,6 +107,7 @@ nav:
     - Stringhe:
       - std/string/index.md
       - String: std/string/string.md
+    - Iterators: std/iterators/index.md
     - Option e Result: std/option-result.md
   - The Rust Book:
     - book/index.md
